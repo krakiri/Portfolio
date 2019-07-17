@@ -87,6 +87,7 @@ footer{
 {
   .start{
     margin: 2px;
+	margin-bottom:10px;
     display: inline-block;
     height: 80px;
     width: 80px;
@@ -111,6 +112,10 @@ footer{
 	#level-title {
 	  font-size: 1.25rem;
 	  margin:  5%;
+	}
+	
+	footer{
+		font-size:0.6rem;
 	}
 }
 
