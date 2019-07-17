@@ -87,7 +87,7 @@ footer{
 {
   .start{
     margin: 2px;
-	margin-bottom:10px;
+	margin-bottom:15px;
     display: inline-block;
     height: 80px;
     width: 80px;
@@ -115,7 +115,7 @@ footer{
 	}
 	
 	footer{
-		font-size:0.6rem;
+		font-size:0.7rem;
 	}
 }
 
