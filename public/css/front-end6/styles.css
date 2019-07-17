@@ -86,14 +86,32 @@ footer{
 @media (max-width: 728px)
 {
   .start{
-    margin: 25px;
+    margin: 2px;
     display: inline-block;
-    height: 200px;
-    width: 200px;
-    border: 10px solid black;
+    height: 80px;
+    width: 80px;
+    border: 5px solid black;
     border-radius: 20%;
     background-color: lightgreen;
   }
+  
+  .btn {
+  margin: 2px;
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  border: 5px solid black;
+  }
+  
+  p{
+  font-size: 0.75rem;
+  margin: 40% auto;
+	}
+	
+	#level-title {
+	  font-size: 1.25rem;
+	  margin:  5%;
+	}
 }
 
 
