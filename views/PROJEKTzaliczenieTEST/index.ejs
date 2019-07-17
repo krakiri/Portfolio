@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PizzaPie</title>
+
+	  <link rel="shortcut icon" href="/img/front-end1/ikonka1.jpg">
+
+    <!-- Css z bootstrapa -->
+    <link href="css/front-end1/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Czcionki i symbole (np font awesome) -->
+    <link href="css/front-end1/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="css/front-end1/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/front-end1/creative.min.css" rel="stylesheet">
+
+	<!--Css z bootstrapa -->
+	<link rel="stylesheet" href="css/front-end1/w3schools.css">
+
+	<style>
+
+	.maps {
+		width:698px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	@media only screen and (max-width: 730px) {
+		.maps {
+			width: 497px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	@media only screen and (max-width: 520px) {
+		.maps {
+			width: 349px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	@media only screen and (max-width: 380px) {
+		.maps {
+			width: 248px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	@media only screen and (max-width: 730px) {
+		.mapysy{ width:500px;height:310px; border:solid 1px #111; }
+		}
+	@media only screen and (max-width: 520px) {
+		.mapysy{ width:350px;height:220px; border:solid 1px #111; }
+		}
+	@media only screen and (max-width: 380px) {
+		.mapysy{ width:250px;height:170px; border:solid 1px #111; }
+		}
+
+		.footer{
+		font-size:20px;
+		}
+
+	@media only screen and (max-width: 700px) {
+		.footer{
+		font-size:17px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.footer{
+		font-size:14px;
+		}
+	}
+
+	@media only screen and (max-width: 380px)
+	{
+		mySidebar{
+		width:20%;
+		}
+	}
+
+	<!-- ///////////////////////////////////////////////////////////////////// -->
+
+		<!-- The Modal (background) -->
+	.modal {
+		display: none;
+		position: fixed; /
+		z-index: 1;
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.4);
+	}
+
+	<!-- /* Modal Content */ -->
+	.modal-content {
+		position: relative;
+		background-color: #fefefe;
+		margin-top: 4%;
+		margin-left:auto;
+		margin-right:auto;
+		padding: 0;
+		border: 0px solid #888;
+		width: 80%;
+		height: 80%;
+		box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		-webkit-animation-name: animatetop;
+		-webkit-animation-duration: 0.4s;
+		animation-name: animatetop;
+		animation-duration: 0.4s
+	}
+
+	<!-- /* Add Animation */ -->
+	@-webkit-keyframes animatetop {
+		from {top:-300px; opacity:0}
+		to {top:0; opacity:1}
+	}
+
+	@keyframes animatetop {
+		from {top:-300px; opacity:0}
+		to {top:0; opacity:1}
+	}
+
+	<!-- /* The Close Button */ -->
+	.close {
+		color: white;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal-header {
+		padding: 2px 16px;
+		background-color: #F05F40;
+		color: white;
+	}
+
+	.modal-body {padding: 2px 16px;}
+
+	.modal-footer {
+		padding: 2px 16px;
+		background-color:#F05F40;
+		color: white;
+		  display: flex;
+  align-items: center;
+  justify-content: center;
+	}
+
+	.modaltitle{
+		margin-left:auto;
+	}
+
+	<!-- ///////////////////////////////////////////////////////////////////// -->
+
+	</style>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Nawigacja -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+      <div class="container">
+
+	  	<div class="w3-teal" style="background:transparent;">
+			<button id="openNav" class="w3-button1 w3-teal w3-xlarge" onclick="w3_open(x)">&#9776;</button>
+		</div>
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="padding-left:10px;" id="start1">Start</a>
+		<a class="navbar-brand js-scroll-trigger" style="padding-left:10px; display:none; color:black;" id="start2">Grafpoint</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="listamenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+		 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; background-color:#fff0e6;" id="mySidebar">
+		 	<hr width="25" style="margin-top:30px;">
+		    <button class="w3-bar-item w3-button w3-large"
+			onclick="w3_close()" style="text-align:center; color:#F05F40;"><h3> <i class="fa fa-arrow-left fa-1x mb-3"></i> Wróć<h3></button>
+			<hr width="25">
+
+			<h3 style="text-align:center; color:#F05F40;">Zobacz nas na portalach</h3>
+			</br>
+			<a href="https://www.facebook.com/" target="blank" class="w3-bar-item w3-button" style="color:#F05F40; text-align:center;"><i class="fa fa-facebook-square fa-4x mb-3"></i></a>
+			<a href="https://www.google.com/" target="blank" class="w3-bar-item w3-button" style="color:#F05F40; text-align:center;"><i class="fa fa-google-plus-square fa-4x mb-3"></i></a>
+			<a href="https://twitter.com/?lang=pl" target="blank" class="w3-bar-item w3-button" style="color:#F05F40; text-align:center;"><i class="fa fa-twitter-square fa-4x mb-3"></i></a>
+			<a href="https://www.instagram.com/?hl=pl" target="blank" class="w3-bar-item w3-button" style="color:#F05F40; text-align:center;"><i class="fa fa-instagram fa-4x mb-3"></i></a>
+
+			<hr width="25">
+			<button class="w3-bar-item w3-button w3-large"
+			onclick="#myModal" style="text-align:center; color:#F05F40;" id="myBtn"><h3>Zamów online!</h3>
+			<i class="fa fa-shopping-cart fa-3x mb-3"></i>
+			</button>
+
+		</div>
+	<!-- Koniec nawigacji -->
+
+		<!-- ///////////////////////////////////////////////////////////////// -->
+
+	<!-- The Modal -->
+	<div class="modal" id="myModal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h2 class="modaltitle">Zamówienie</h2>
+		  <span class="close">&times;</span>
+		</div>
+		<div class="modal-body">
+
+<center style="font-size:30px"><br><br>Strona w budowie</center>
+
+		</div>
+		<div class="modal-footer">
+				<a class="btn btn-light btn-xl mt-3 mb-3" href="" style="float:center;" >Zamów</a>
+		</div>
+	  </div>
+
+	</div>
+
+	<!-- ///////////////////////////////////////////////////////////////// -->
+
+<div id="main" >
+
+    <header style="background-image:url(../img/front-end1/header.jpg);" class="masthead text-center text-white d-flex" >
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>PizzaPie</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Zapraszamy wszystkich, którzy chcieliby zasmakować kuchni włoskiej nie wyjeżdżając daleko. Dobre jedzenie, wyśmienite wino i pyszne desery, a do tego włoska muzyka. Serdecznie zapraszamy!</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Zobacz więcej</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">O nas</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Produkty, które sami sprowadzamy z Włoch sprawiają bowiem, że dania naszej kuchni mają wyjątkowy, oryginalnie włoski smak. W szczególności zachęcamy Państwa do spróbowania naszej specjalności, którą jest pizza przygotowywana na Państwa oczach w piecu chlebowym opalanym drewnem, co nadaje jej wyjątkowy smak.
+Dysponujemy klimatyzowaną salą oraz antresolą dla 100 osób. Organizujemy wszelkie imprezy okolicznościowe oferując również dania tradycyjne spoza naszej karty menu.
+Chcielibyśmy wraz z Państwem stworzyć  miejsce spotkań ludzi pasjonujących się kuchnią i kulturą włoską, a także zachęcić tych mniej zainteresowanych do wspólnego biesiadowania w miłej atmosferze. </p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Sprawdź portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Nasze portfolio</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+		  <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Potrawy z pasją</h3>
+              <p class="text-muted mb-0">Nasze dania wytwarzane są z oddaniem i pasją przez to tak dobrze smakują!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-thumbs-o-up text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Zadowoleni klienci</h3>
+              <p class="text-muted mb-0">Do tej pory, codziennie spotykamy się z aprobatą naszych klientów.</p>
+            </div>
+          </div>
+		  <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Najwyższa jakość</h3>
+              <p class="text-muted mb-0">Posiadamy certyfikaty najwyższej jakości!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-clock-o text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Zawsze na czas</h3>
+              <p class="text-muted mb-0">Nasze zamówienia docierają do klientów zawsze na czas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/front-end1/portfolio/fullsize/galeria1.jpg">
+              <img class="img-fluid" src="img/front-end1/tlo1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Nasz lokal dzieli starannie dania na
+                  </div>
+                  <div class="project-name">
+                    ZRÓWNOWAŻONE PORCJE
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/front-end1/portfolio/fullsize/galeria2.jpg">
+              <img class="img-fluid" src="img/front-end1/galeria2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+
+                  </div>
+                  <div class="project-name">
+                   POTWIERDZENIE NASZEJ JAKOŚCI
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/front-end1/portfolio/fullsize/galeria3.jpg">
+              <img class="img-fluid" src="img/front-end1/galeria3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+
+                  </div>
+                  <div class="project-name">
+                    PROSTO Z PIECA
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/front-end1/portfolio/fullsize/galeria4.jpg">
+              <img class="img-fluid" src="img/front-end1/galeria4.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+
+                  </div>
+                  <div class="project-name">
+                  SZCZĘŚLIWI KLIENCI
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/front-end1/portfolio/fullsize/galeria5.jpg">
+              <img class="img-fluid" src="img/front-end1/galeria5.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                  SZYBKA DOSTAWA TO
+                  </div>
+                  <div class="project-name">
+                  ŚWIEŻE ZAMÓWIENIE
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/front-end1/portfolio/fullsize/galeria6.jpg">
+              <img class="img-fluid" src="img/front-end1/galeria6.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+					Wśród pracowników panuje
+                  </div>
+                  <div class="project-name">
+					PRZYJAZNA ATMOSFERA
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Możesz otworzyć i obejrzeć lub pobrać naszą kartę dań w wersji pdf!</h2>
+		<div class="row">
+			<div class="col-lg-4 ml-auto text-center">
+				<a class="btn btn-light btn-xl sr-button mt-3 mb-3" href="KartaDan.pdf" target="_blank" title="Menu otworzy się w nowej karcie">Otwórz</a>
+			</div>
+			<div class="col-lg-4 mr-auto text-center">
+				<a class="btn btn-light btn-xl sr-button mt-3" href="KartaDan.pdf" target="_blank" title="Zostanie rozpoczęte pobieranie Menu" download="PIZZAPIE-Menu">Pobierz</a>
+			</div>
+		</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Kontakt</h2>
+            <hr class="my-4">
+            <p class="mb-5">Już wybrałeś co chcesz zamówić? Świetnie! </br>
+			Zadzwoń do nas lub skontaktuj się mailowo jeśli coś jest dla Ciebie niejasne.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>123-456-678</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com" style="color:black">pizzapie@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	  </br></br></br>
+
+	<div class="maps">
+		<iframe class ="mapysy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.0411010826415!2d19.394661315740844!3d51.860205979694655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5d5b39debd7%3A0x43eb7d47f331ac12!2sGRAFPOINT!5e0!3m2!1spl!2spl!4v1531166542019" width="700" height="450" frameborder="5" style="border:solid 1px" allowfullscreen>
+		</iframe>
+	</div>
+
+    </section>
+
+	<div class="footer" style="background-color:#F05F40; padding-bottom:30px; padding-top:30px;">
+        <p class="m-0 text-center text-white">Copyright &copy; Piotr Knera 2018</p>
+	</div>
+
+</div>
+
+	  <!-- Modal -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="css/front-end1/jquery/jquery.min.js"></script>
+    <script src="css/front-end1/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="css/front-end1/jquery-easing/jquery.easing.min.js"></script>
+    <script src="css/front-end1/scrollreveal/scrollreveal.min.js"></script>
+    <script src="css/front-end1/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/front-end1/creative.min.js"></script>
+
+	<script>
+		function w3_close() {
+		  document.getElementById("main").style.display = "inline-block";
+		  document.getElementById("main").style.marginLeft = "0%";
+		  document.getElementById("mySidebar").style.display = "none";
+		  document.getElementById("openNav").style.display = "inline-block";
+		  document.getElementById("start1").style.display = "inline-block";
+		  document.getElementById("start2").style.display = "none";
+		  document.getElementById("start1").style.marginLeft = "0px";
+
+		  if (x.matches) {
+		  		  document.getElementById("listamenu").style.display = "inline";
+		  }
+
+		}
+		function w3_open(x) {
+			if (x.matches) {
+				  document.getElementById("mySidebar").style.width = "100%";
+				  document.getElementById("mySidebar").style.display = "block";
+				  document.getElementById("openNav").style.display = 'none';
+				  document.getElementById("start1").style.display = "none";
+				  document.getElementById("start2").style.display = "inline";
+				  document.getElementById("listamenu").style.display = "none";
+				  document.getElementById("start2").style.marginLeft = "auto";
+				  document.getElementById("start2").style.marginRight = "auto";
+				  document.getElementById("main").style.display = "none";
+			} else if(y.matches) {
+
+				  document.getElementById("main").style.marginLeft = "35%";
+				  document.getElementById("mySidebar").style.width = "35%";
+				  document.getElementById("mySidebar").style.display = "block";
+				  document.getElementById("openNav").style.display = 'none';
+				  document.getElementById("start1").style.marginLeft = "175px";
+			}else if(z.matches) {
+
+				  document.getElementById("main").style.marginLeft = "20%";
+				  document.getElementById("mySidebar").style.width = "20%";
+				  document.getElementById("mySidebar").style.display = "block";
+				  document.getElementById("openNav").style.display = 'none';
+				  document.getElementById("start1").style.marginLeft = "200px";
+			}
+			else {
+			      document.getElementById("main").style.marginLeft = "20%";
+				  document.getElementById("mySidebar").style.width = "20%";
+				  document.getElementById("mySidebar").style.display = "block";
+				  document.getElementById("openNav").style.display = 'none';
+				  document.getElementById("start1").style.marginLeft = "100px";
+			}
+		}
+
+		var x = window.matchMedia("(max-width: 500px)")
+		var y = window.matchMedia("(max-width: 700px)")
+		var z = window.matchMedia("(max-width: 1500px)")
+
+		<!-- ///////////////////////////////////////////////////////////////////////// -->
+
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		<!-- ///////////////////////////////////////////////////////////////////////// -->
+
+	</script>
+
+  </body>
+
+</html>
