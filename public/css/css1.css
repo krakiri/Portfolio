@@ -556,12 +556,12 @@ p span{
   .popup {
     top: -20%;
     left: 0%;
-    width: 160%;
-    height: 160%;
+    width: 182%;
+    height: 182%;
   }
   .popup figure {
-    top: 55%;
-    left: 43%;
+    top: 52%;
+    left: 48.5%;
   }
   .popup figure figcaption {
     padding: 100px 20px 7.5px 10px;
