@@ -100,6 +100,21 @@ app.get("/front-end5", function(req, res){
 app.get("/front-end6", function(req, res){
        res.render("Strona6/index");
 });
+app.get("/front-end7", function(req, res){
+       res.render("Strona7/index");
+});
+app.get("/front-end8", function(req, res){
+       res.render("Strona8/index");
+});
+app.get("/front-end9", function(req, res){
+       res.render("Strona9/index");
+});
+app.get("/front-end10", function(req, res){
+       res.render("Strona10/index");
+});
+app.get("/front-end11", function(req, res){
+       res.render("Strona11/index");
+});
 
 ///////////////////////// BLOG ///////////////////////////
 app.get("/back-end1", function(req, res){

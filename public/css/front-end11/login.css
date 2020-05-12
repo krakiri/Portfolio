@@ -1,0 +1,109 @@
+body, html{
+	margin: 0;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg{
+
+  background-image: url(/img/front-end11/trip.JPG);
+    filter: brightness(45%);
+  -webkit-filter: brightness(45%);
+
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.opacity{
+
+}
+
+.login_field{
+	padding: 5% 0;
+	background-color: rgba(53, 164, 192, 0.9);
+	border-radius: 30px;
+	border: 1.5px solid #54629d;
+	text-align: center;
+	filter: opacity(96.5%);
+	-webkit-box-shadow: 4px 4px 39px 19px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 39px 19px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 39px 19px rgba(0,0,0,0.75);
+	position: absolute;
+	top: 6%;
+	left:34.25%;
+	z-index:2;
+}
+
+input{
+	border-radius: 100px;
+	padding: 2.5% 7.5%;
+	border-style: none;
+	background-color: White;
+	filter: opacity(100%);
+	-webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+
+label{
+	color: White;
+	filter: opacity(100%);
+}
+
+.logo1{
+	width: 30%;
+	padding-bottom:5%;
+	filter: opacity(100%);
+}
+
+.thirdinput {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to right, hsl(176, 68%, 64%) 5%, hsl(198, 60%, 50%));
+	background-color:#0062ff;
+	border-radius:100px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:15px 98px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+	display: block;
+	margin: 2.75% auto 0;
+
+}
+.thirdinput:hover {
+	background:linear-gradient(to right, hsl(176, 43%, 39%) 5%, hsl(198, 35%, 25%) 100%);
+	background-color:#415989;
+	border:1px solid hsl(198, 45%, 35%);
+}
+.thirdinput:active {
+	position:relative;
+	top:1px;
+}
+
+/******************/
+/* Responsywność */
+/******************/
+
+@media (max-width: 768px)
+{
+	.login_field{
+		padding: 5% 0;
+		position: absolute;
+		top: 10%;
+		left:2%;
+		right: 2%;
+	}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/front-end10/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/front-end10/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/69ba83c08d.js" crossorigin="anonymous"></script>
+  <script src="/js/front-end10/script.js" type="text/javascript"></script>
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+</head>
+<body id="body1">
+
+  <div class="background"></div>
+    <!-- - - - - - navbar - - - - - -->
+    <nav>
+      <img src="img/front-end10/logo.svg"></img>
+
+      <i class="fas fa-bars" onclick="myFunction()" id="menu_icon"></i>           <!-- important  -->
+      <ul id="menu_responsive">
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">PRICING</a></li>
+          <div class="another_hr"></div>
+        <li><a href="#" class="login">LOGIN</a></li>
+      </ul>
+    </nav>
+    <!-- - - - - - end of navbar - - - - - -->
+
+    <section class="main_section">
+
+      <img src="img/front-end10/illustration-devices.svg" alt="">
+
+      <div class="captions">
+        <div class="first_caption">
+          <h3 class="new">NEW</h3>
+          <h3 class="caption">MONOGRAPH DASHBOARD</h3>
+        </div>
+
+        <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+        <p>Project planning and time tracking for agile teams</p>
+
+        <div class="last_caption">
+          <button type="button" name="button" onmouseover="buttonFunctionOn()" onmouseout="buttonFunctionOff()">SCHEDULE A DEMO</button>
+          <h2 id="the_only_h2">TO SEE A LIVE PREVIEW</h2>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/krakiri" target="_blank">Piotr Knera</a>.
+      </p>
+    </footer>
+
+</body>
+</html>
