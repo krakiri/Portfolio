@@ -35,7 +35,7 @@ p span{
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   transform: scaleX(1.35);
   border: 2px solid #333333;
-  background-image: url(/img/background1_7.JPG);
+  background-image: url(img/background1_7.JPG);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -62,7 +62,7 @@ p span{
   align-items: center;
   border: 2px solid #333333;
   border-style: solid none solid none;
-  background-image: url(/img/background2.JPG);
+  background-image: url(img/background2.JPG);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -81,7 +81,7 @@ p span{
   align-items: center;
   border: 2px solid #333333;
   border-style: solid none solid none;
-  background-image: url(/img/background3.JPG);
+  background-image: url(img/background3.JPG);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
