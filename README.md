@@ -14,7 +14,7 @@
 <br>
 <h2 align="center" name="Main-page">Main Page</h2>
 
-<a align="center" href="https://powerful-mountain-48641.herokuapp.com" target="_blank">Link</a> 
+<a align="center" href="https://powerful-mountain-48641.herokuapp.com">Link</a> 
 
 The entire main application was created based on Node.Js.\
 Uses the services of the cloud platform heroku and
@@ -90,7 +90,7 @@ Project for passing internet applications.
 It was created in 2018.
 Mainly uses bootstrap and jQuery.
 
-<br><br><br>
+<br><br><br><br>
 <img align="right" width="500" height="250" src="./public/img/front-end2.PNG">
 
 ### Page 7
@@ -175,7 +175,7 @@ For learning application integration with another website, here: mailchimp.
 The data is sent to express a desire to subscribe to the site. 
 Who sent and what data only the administrator sees on the mailchimp website.
 
-
+<br>
 <img align="left" width="500" height="250" src="./public/img/back-end4.PNG">
 
 ### Page 4
