@@ -14,7 +14,7 @@
 <br>
 <h2 align="center" name="Main-page">Main Page</h2>
 
-<a align="center" href="https://powerful-mountain-48641.herokuapp.com">Link</a> 
+<a align="center" href="https://powerful-mountain-48641.herokuapp.com" target="_blank">Link</a> 
 
 The entire main application was created based on Node.Js.\
 Uses the services of the cloud platform heroku and
