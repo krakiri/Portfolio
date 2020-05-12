@@ -77,7 +77,7 @@ For practicing coding in Sass(CSS), HTML and JavaScript training.
 
 Admin login page.\
 For mobile application in Android Studio.\
-Logo design by <a href="github.com/yakzi">yakzi</a>.
+Logo design by <a href="https://www.github.com/yakzi">yakzi</a>.
 
 <br><br><br>
 <img align="left" width="500" height="250" src="./public/img/front-end1.PNG">
