@@ -23,7 +23,7 @@ p{
 .main_background{
   margin-top: -0.6%;
   padding-bottom: 2.75%;
-  background: url(img/front-end7/bg-desktop.svg) center;
+  background: url(/img/front-end7/bg-desktop.svg) center;
   background-size: cover;
 }
 
@@ -126,7 +126,7 @@ i.fab:hover{
   }
 
   .main_background{
-    background: url(../images/bg-mobile.svg) center;
+    background: url(/images/bg-mobile.svg) center;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -264,7 +264,7 @@ i.fab:hover{
     opacity: 0;
     transform: translateX(-15rem);
   }
-  
+
   50%{
 	opacity: 0;
     transform: translateX(-15rem);

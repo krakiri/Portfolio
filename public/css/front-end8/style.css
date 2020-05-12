@@ -210,7 +210,7 @@ i.fas.fa-arrow-circle-right{
   grid-template-rows: 100%;
   background-color: hsl(218, 28%, 13%);
   padding: 1% 8.5%;
-  background-image: url(../images/bg-quotes.PNG);
+  background-image: url(/img/front-end8/bg-quotes.png);
   background-repeat: no-repeat;
   background-position: 9.75% 0;
 }

@@ -10,7 +10,7 @@ body, html{
 
 .bg{
 
-  background-image: url(/img/front-end11/trip.JPG);
+  background-image: url(/img/front-end11/trip.jpg);
     filter: brightness(45%);
   -webkit-filter: brightness(45%);
 
